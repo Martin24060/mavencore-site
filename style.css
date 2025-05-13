@@ -61,9 +61,7 @@ nav a:hover {
     max-width: 1128px;
     display: block;
     margin: 0 auto 30px auto;
-    object-fit: cover;
-    aspect-ratio: 1128 / 191;
-
+    object-fit: contain;
 }
 
 /* ===== MAIN CONTENT ===== */
