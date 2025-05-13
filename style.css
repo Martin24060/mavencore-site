@@ -50,14 +50,20 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+.banner-container {
+    margin-top: 40px; /* Adds ~2cm spacing */
+    text-align: center;
+}
+
 .banner {
     width: 100%;
-    max-width: 1128px;
     height: auto;
-    aspect-ratio: 1128 / 191;
-    object-fit: cover;
+    max-width: 1128px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
+    object-fit: cover;
+    aspect-ratio: 1128 / 191;
+
 }
 
 /* ===== MAIN CONTENT ===== */
