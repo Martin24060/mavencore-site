@@ -146,3 +146,26 @@ footer {
         font-size: 15px;
     }
 }
+/* Product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.product-card h2 {
+  color: #003366;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
