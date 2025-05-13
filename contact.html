@@ -1,70 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us | MavenCore Water Technologies</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Contact Us | MavenCore Water Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('open');
+    }
+  </script>
 </head>
-    <script>
-  function toggleMenu() {
-    const nav = document.getElementById('main-nav');
-    nav.classList.toggle('open');
-  }
-</script>
-
 <body>
 
-<header>
-  <img src="assets/logo.jpeg" alt="MavenCore Logo" class="logo">
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <nav id="main-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="sectors.html">Sectors</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById('main-nav');
-    nav.classList.toggle('open');
-  }
-</script>
-``>
-</header>
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.jpeg" alt="MavenCore Logo" class="logo" />
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
+  <!-- Banner -->
+  <section class="banner-container">
+    <img src="assets/banner.jpeg" alt="MavenCore Banner" class="banner" />
+  </section>
 
-<main>
-    <h1>Contact Us</h1>
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
 
-    <section>
-        <h2>Sales Team</h2>
-        <p><strong>Martin Tarugarira</strong><br>
-        Commercial & Technical Director<br>
-        <a href="mailto:martin@mavencoresolutions.com">martin@mavencoresolutions.com</a><br>
-        Phone: <a href="tel:+447545630756">+44 7545 630756</a></p>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Sales Team</h2>
+          <p><strong>Martin Tarugarira</strong><br>
+            Commercial & Technical Director<br>
+            Email: <a href="mailto:martin@mavencoresolutions.com">martin@mavencoresolutions.com</a><br>
+            Phone: <a href="tel:+447545630756">+44 7545 630756</a></p>
+
+          <h2>HR & Admin Team</h2>
+          <p><strong>Sharmaine Bhebhe</strong><br>
+            Head of Corporate Services<br>
+            Email: <a href="mailto:sharmaine@mavencoresolutions.com">sharmaine@mavencoresolutions.com</a></p>
+
+          <h2>Company Address</h2>
+          <p>43 Castlemilk Court, Winsford, CW7 1GJ</p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.262367380747!2d-2.539708684001527!3d53.19372819492261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4f47cc41cd23%3A0x8457d8e926cdf65a!2s43%20Castlemilk%20Ct%2C%20Winsford%20CW7%201GJ!5e0!3m2!1sen!2suk!4v1680193934856!5m2!1sen!2suk"
+            width="100%" height="250" style="border:0; margin-top: 10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Start Your Enquiry</h2>
+          <form action="mailto:info@mavencoresolutions.com" method="post" enctype="text/plain">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="Company">
+
+            <label for="email">Company Email</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone">
+
+            <label for="message">Enquiry</label>
+            <textarea id="message" name="Message" rows="6" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <section>
-        <h2>HR & Admin Team</h2>
-        <p><strong>Sharmaine Bhebhe</strong><br>
-        Head of Corporate Services<br>
-        <a href="mailto:sharmaine@mavencoresolutions.com">sharmaine@mavencoresolutions.com</a></p>
-    </section>
-
-    <section>
-        <h2>Company Address</h2>
-        <p>43 Castlemilk Court<br>Winsford, CW7 1GJ<br>United Kingdom</p>
-        <iframe
-            src="https://www.google.com/maps?q=43+Castlemilk+Court,+Winsford,+CW7+1GJ&output=embed"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 MavenCore Water Technologies
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MavenCore Water Technologies</p>
+    <p>Company No: 16438230</p>
+    <a href="https://www.linkedin.com/company/mavencore-water-technologies/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+      <img src="assets/linkedin-icon.png" alt="LinkedIn" style="height: 24px; margin-top: 10px;" />
+    </a>
+  </footer>
 
 </body>
 </html>
+
