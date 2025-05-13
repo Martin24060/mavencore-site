@@ -16,13 +16,21 @@
 
 <header>
   <img src="assets/logo.jpeg" alt="MavenCore Logo" class="logo">
-  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav id="main-nav">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="products.html">Products</a>
     <a href="sectors.html">Sectors</a>
     <a href="contact.html">Contact Us</a>
   </nav>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+  }
+</script>
+``>
 </header>
 
 
